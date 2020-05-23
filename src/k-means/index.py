@@ -5,15 +5,15 @@ from sklearn.datasets.samples_generator import make_blobs
 from sklearn.cluster import KMeans
 from typing import List, Tuple
 
+# https://towardsdatascience.com/machine-learning-algorithms-part-9-k-means-example-in-python-f2ad05ed5203
+
 TwoDArray = List[Tuple[float, float]]
 
 
 def displayData(data: TwoDArray):
     plt.scatter(data[:, 0], data[:, 1])
-# plt.savefig("plot.png")
+    plt.show()
 
-
-# plt.show()
 
 def checkClusters(data: TwoDArray):
     wcss: List[float] = []
@@ -23,7 +23,6 @@ def checkClusters(data: TwoDArray):
         kmeans.fit(data)
         wcss.append(kmeans.inertia_)
 
-    print(wcss)
     plt.plot(range(1, 11), wcss)
     plt.title('Elbow Method')
     plt.xlabel('Number of clusters')
