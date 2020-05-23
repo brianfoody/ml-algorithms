@@ -13,6 +13,8 @@ All python code will be typed to hopefully aid understanding.
   `python -m pip install --user virtualenv`
 - Initialise your virtual environment
   `python -m virtualenv .venv`
+- Source into it. Open up a Python terminal in VS Code to do automaticall or
+  `source .venv/bin/activate`
 - Install dependencies
   `python -m pip install -r requirements.txt`
 
