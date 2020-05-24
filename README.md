@@ -20,7 +20,9 @@ All python code will be typed to hopefully aid understanding.
 
 ### K-Means
 
-`python src/-kmeans/index.py`
+Basic flow of k-means on a 2D and 3D dataset
+`python src/k-means/twoD.py`
+`python src/k-means/threeD.py`
 
 Recommend uncommenting each line individually under \_\_main\_\_ to get a feel for the process.
 

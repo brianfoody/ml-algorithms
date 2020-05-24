@@ -37,8 +37,8 @@ def categoriseData(data: TwoDArray):
     plt.scatter(data[:, 0], data[:, 1])
     plt.scatter(kmeans.cluster_centers_[:, 0],
                 kmeans.cluster_centers_[:, 1], s=300, c='red')
-    # plt.show()
-    plt.savefig("plot.png")
+    plt.show()
+    # plt.savefig("plot.png")
 
 
 if __name__ == "__main__":
@@ -54,5 +54,5 @@ if __name__ == "__main__":
     # checkClusters(randomData)
 
     # Finally uncomment to run your k-means and categorise the data
-    categoriseData(randomData)
+    # categoriseData(randomData)
     print("Done")
